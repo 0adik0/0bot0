@@ -1,0 +1,6 @@
+asyncio
+requests
+aiogram
+Dispatcher
+aiogram.utils
+executor
