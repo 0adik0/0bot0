@@ -21,7 +21,7 @@ db = Database("database/database.db")
 # Обработчик команды /start
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.reply("Отправь мне ссылку на приложение в Google Play Store для проверки.", reply_markup=markup.main_markup)
+    await message.reply("Отправь мне ссылку на приложение в Google Play Store для проверки", reply_markup=markup.main_markup)
 
 
 # Обработчик текстовых сообщений (ссылок)
@@ -35,9 +35,9 @@ async def echo(message: types.Message):
             for link in links:
 
                 if link[3] == 1:
-                    msg += f"{link[2]} - в сторе"
+                    msg += f"{link[2]} - в сторе\n\n"
                 else:
-                    msg += f"{link[2]} - не в сторе"
+                    msg += f"{link[2]} - не в сторе\n\n"
             await bot.send_message(message.chat.id, msg)
         else:
             await bot.send_message(message.chat.id, "У вас нет добавленных ссылок!")
