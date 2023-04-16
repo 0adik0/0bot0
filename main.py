@@ -7,7 +7,7 @@ from aiohttp import ClientSession, ClientTimeout
 import markup
 from database.database import Database
 
-TOKEN = '6012383203:AAEX931ZSvtINhZ8lp4UafdW_UpVpdaDSFg'
+TOKEN = '1619406127:AAFcy3-mwwwt13d_KEqaqfsvKMdLeaTXbaE'
 timeout = ClientTimeout(total=0)
 logging.basicConfig(level=logging.INFO)
 
@@ -21,7 +21,7 @@ db = Database("database/database.db")
 # Обработчик команды /start
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.reply("Отправь мне ссылку на приложение в Google Play Store для проверки", reply_markup=markup.main_markup)
+    await message.reply("Отправь мне ссылку на приложение в Google Play Store для проверки.", reply_markup=markup.main_markup)
 
 
 # Обработчик текстовых сообщений (ссылок)
