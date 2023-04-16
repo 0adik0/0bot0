@@ -7,7 +7,7 @@ from aiohttp import ClientSession, ClientTimeout
 import markup
 from database.database import Database
 
-TOKEN = '1619406127:AAFcy3-mwwwt13d_KEqaqfsvKMdLeaTXbaE'
+TOKEN = '6012383203:AAEtTX-jxszwteMinaKBE4vzOI15luSt2lM'
 timeout = ClientTimeout(total=0)
 logging.basicConfig(level=logging.INFO)
 
