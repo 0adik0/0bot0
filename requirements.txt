@@ -1,6 +1,4 @@
-asyncio
-requests
-aiogram
-Dispatcher
-aiogram.utils
-executor
+aiogram==2.14.3
+Flask==1.1.2
+gunicorn==20.0.4
+requests==2.25.1
