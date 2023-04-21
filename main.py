@@ -6,7 +6,7 @@ from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.types import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 import requests
 
-API_TOKEN = os.environ.get('API_TOKEN', '1619406127:AAFcy3-mwwwt13d_KEqaqfsvKMdLeaTXbaE')
+API_TOKEN = os.environ.get('API_TOKEN', '1619406127:AAHJzxIS6wQ_-OigS0IS83fmcbd9YtsBkOU')
 WEB_APP_URL = os.environ.get('WEB_APP_URL', 'https://privatizerbot.herokuapp.com')
 
 logging.basicConfig(level=logging.INFO)
